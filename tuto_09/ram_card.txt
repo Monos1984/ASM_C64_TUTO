@@ -1,0 +1,41 @@
+$D018 SSSSCCCx
+S = Screen Memory (pas de 1024)
+C = Charset Memory
+
+
+
+==========================================================
+*                 Zone de Programmation                  *
+==========================================================
+$000 Registre controle
+$0002 Page 0
+$0400 Screen Memory
+$0800 Start Programme
+$9FFF End Ram Programme
+==========================================================
+*                  Autre Decoupage                       *
+==========================================================
+$A000 8k Basic Rom
+$C000 4k Ram Buffer 
+$D000  4k i/o
+...$D800 Color Ram
+$E000  8k Kernal 
+
+===========================================================  
+*                      Vic 2                              *
+===========================================================
+Adressage : 16 ko
+Startup : $0000 <-> $3FFF (Bank 0)
+Screen Memory : $400
+
+===========================
+* Ram Card pour les tutos *
+===========================
+$0400 : Screen Memory     ( 1 ko) (Memoire Ecran)
+$0800 : Main Programme    (12 ko) (Zone du programme)
+$3800 : Chargen           ( 2 ko) (256 tiles de 8x8 pixel Pointeur à bouger : $D018 = xxxx111x)
+$4000 : Work Ram          (24,5 ko) (Ram exploitable)
+$A000 : Rom Basic         (8ko)     (Basic pas utile en full ASM)
+$C000 : Work Ram          (4ko)     (Ram Exploitable)
+$D000 : Io                (4ko)     (Registre divers et Color Ram en $D800)
+$E000 : Kernal            (8ko)     (OS)
