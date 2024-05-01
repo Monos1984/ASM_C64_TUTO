@@ -1,0 +1,22 @@
+Les sources du tuto arrivera plus tard.
+
+Mais  voici le tableau de la color ram
+
+
+
+; =================================
+; * Adresse Ligne de la Color Ram *
+; =================================
+
+; ----------------------------------------------
+; - Debut de la color Ram : $D800              -
+; - La Color Ram est fixe dans le commodore 64 -
+; ----------------------------------------------
+COLOR_ADRESSE
+  .word $D800,$D828,$D850,$D878,$D8A0,$D8C8,$D8F0,$D918
+  .word $D940,$D968,$D990,$D9B8,$D9E0,$DA08,$DA30,$DA58
+  .word $DA80,$DAA8,$DAD0,$DAF8,$DB20,$DB48,$DB70,$DB98
+  .word $DBC0
+  
+  
+  
